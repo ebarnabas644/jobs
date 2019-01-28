@@ -12,7 +12,7 @@
 		<h1 class='text-center'>$phone->brand $phone->name</h1>
 	<hr>
 			<div class='image'>
-				<img src='pictures/big_$phone->image' class='w-50' id='big_img'>
+				<img src='../../pictures/$phone->big_image' class='w-50' id='big_img'>
 		</div>
 		<h5 class='text-center'>Biztos törölni szeretné ezt a terméket?</h5>
 		<form method='post' action='../../sites/adminsite/admin.php'>
