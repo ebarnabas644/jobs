@@ -23,7 +23,7 @@
 		</div>
 		<ul>
 			<a href="sites/loginsite/login.php"><li>Bejelentkezés</li></a>
-			<li><input id="sidesearch" type="text" placeholder="Keresés.." name="search" width="230px"></li>
+			
 		</ul>
 	</div>
 	<div class="container">

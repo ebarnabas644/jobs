@@ -57,7 +57,7 @@ require ($_SERVER['DOCUMENT_ROOT'] ."/catalog/databaseaccess/accessdatabase.php"
 		</div>
 		<ul>
 			<a href="../../sites/logoutsite/logout.php"><li>Kijelentkezés</li></a>
-			<li><input id="sidesearch" type="text" placeholder="Keresés.." name="search" width="230px"></li>
+			
 		</ul>
 	</div>
 	<div class="container">
