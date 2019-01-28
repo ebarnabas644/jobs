@@ -35,11 +35,11 @@
 				</tr>
 				<tr>
 				<td><label for='image'>1. kép neve: </label></td>
-				<td><input name='brand' type='text' id='image' value='$phone->image'/></td>
+				<td><input name='image' type='text' id='image' value='$phone->image'/></td>
 				</tr>
 				<tr>
 				<td><label for='big_image'>2. kép neve: </label></td>
-				<td><input name='brand' type='text' id='big_image' value='$phone->big_image'/></td>
+				<td><input name='big_image' type='text' id='big_image' value='$phone->big_image'/></td>
 				</tr>
 				<tr>
 				<td colspan='2' align='center'><a class='btn btn-secondary' href='../../sites/adminsite/admin.php' role='button'>Mégsem</a>

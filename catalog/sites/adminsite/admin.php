@@ -14,9 +14,9 @@ require ($_SERVER['DOCUMENT_ROOT'] ."/catalog/databaseaccess/accessdatabase.php"
 		}
 		else{
 		$stock='false';
-		$image=$_POST['image'];
-		$big_image=$_POST['big_image'];
 	}
+	$image=$_POST['image'];
+		$big_image=$_POST['big_image'];
 		$brand=$_POST['brand'];
 		pg_query($db_connectiontocatalog, "UPDATE phones SET (name,price,stock,brand,image,big_image) = ('$name','$price','$stock','$brand','$image','$big_image') WHERE id=$id");
 	}
