@@ -15,7 +15,7 @@
 			<div class='image'>
 				<img src='../../pictures/$phone->big_image' class='w-100' id='big_img'>
 		</div>
-		<h5 class='text-center'>Ár: $phone->price Ft</h5>";
+		<h5 class='text-center'>Ár: ".number_format($phone->price,0,',',' ')." Ft</h5>";
 			}
 			}
 			return $result;

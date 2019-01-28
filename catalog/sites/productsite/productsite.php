@@ -19,7 +19,7 @@
 			<span></span>
 		</div>
 		<ul>
-			<a href='../../sites/loginsite/login.php'><li>Bejelentkezés</li></a>
+			<a href='../../sites/adminsite/admin.php'><li>Kezdőlap</li></a>
 		</ul>
 	</div>
 	<div class="row" align="center">
