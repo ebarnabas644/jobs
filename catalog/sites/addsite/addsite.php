@@ -29,7 +29,7 @@ include($_SERVER['DOCUMENT_ROOT'] ."/catalog/sites/loginsite/session.php");
 	<div class='container'>
 				<h1 class='text-center'>Termék hozzáadása</h1>
 				<hr align='center'>
-				<form id='testform' name='testform' method='post' action=''>
+				<form id='testform' name='testform' method='post' action='../../sites/adminsite/admin.php'>
 				<table align='center'>
 				<tr>
 				<td><label for='id'>Azonosító: </label></td>
@@ -53,15 +53,16 @@ include($_SERVER['DOCUMENT_ROOT'] ."/catalog/sites/loginsite/session.php");
 				</tr>
 				<tr>
 				<td><label for='image'>1. kép neve: </label></td>
-				<td><input name='brand' type='text' id='image' value=''/></td>
+				<td><input name='image' type='text' id='image' value=''/></td>
 				</tr>
 				<tr>
 				<td><label for='big_image'>2. kép neve: </label></td>
-				<td><input name='brand' type='text' id='big_image' value=''/></td>
+				<td><input name='big_image' type='text' id='big_image' value=''/></td>
 				</tr>
 				<tr>
 				<td colspan='2' align='center'><a class='btn btn-secondary' href='../../sites/adminsite/admin.php' role='button'>Mégsem</a>
 				<input type='submit' class='btn btn-success' name='add' value='Mentés' href='../../sites/adminsite/admin.php'/></td>
+			</form>
 				</tr>
 				</table>
 				</div>
