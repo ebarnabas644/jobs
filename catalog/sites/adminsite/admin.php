@@ -24,6 +24,8 @@ require ($_SERVER['DOCUMENT_ROOT'] ."/catalog/databaseaccess/accessdatabase.php"
 		$id=$_POST['id'];
 		$name=$_POST['name'];
 		$price=$_POST['price'];
+		$image=$_POST['image'];
+		$big_image=$_POST['big_image'];
 		if(isset($_POST['stock'])){
 			$stock='true';
 		}
@@ -31,7 +33,7 @@ require ($_SERVER['DOCUMENT_ROOT'] ."/catalog/databaseaccess/accessdatabase.php"
 		$stock='false';
 	}
 		$brand=$_POST['brand'];
-		pg_query($db_connectiontocatalog, "INSERT INTO phones (id,name,price,stock,brand) VALUES ('$id','$name','$price','$stock','$brand')");
+		pg_query($db_connectiontocatalog, "INSERT INTO phones (id,name,price,stock,brand,image,big_image) VALUES ('$id','$name','$price','$stock','$brand','$image','$big_image')");
 	}
 ?>
 <!DOCTYPE html>
