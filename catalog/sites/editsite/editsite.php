@@ -32,6 +32,7 @@ include($_SERVER['DOCUMENT_ROOT'] ."/catalog/sites/loginsite/session.php");
 	$product = new EditProductController();
 	echo $product->PreviewProduct();
 	?>
+</form>
 </div>
 </body>
 </html>

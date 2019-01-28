@@ -14,9 +14,11 @@ require ($_SERVER['DOCUMENT_ROOT'] ."/catalog/databaseaccess/accessdatabase.php"
 		}
 		else{
 		$stock='false';
+		$image=$_POST['image'];
+		$big_image=$_POST['big_image'];
 	}
 		$brand=$_POST['brand'];
-		pg_query($db_connectiontocatalog, "UPDATE phones SET (name,price,stock,brand) = ('$name','$price','$stock','$brand') WHERE id=$id");
+		pg_query($db_connectiontocatalog, "UPDATE phones SET (name,price,stock,brand,image,big_image) = ('$name','$price','$stock','$brand','$image','$big_image') WHERE id=$id");
 	}
 	if(array_key_exists('add', $_POST)){
 		$id=$_POST['id'];
@@ -56,8 +58,8 @@ require ($_SERVER['DOCUMENT_ROOT'] ."/catalog/databaseaccess/accessdatabase.php"
 			<span></span>
 		</div>
 		<ul>
+			<a href="../../sites/uploadsite/uploadsite.php"><li>Kép feltöltése</li></a>
 			<a href="../../sites/logoutsite/logout.php"><li>Kijelentkezés</li></a>
-			
 		</ul>
 	</div>
 	<div class="container">

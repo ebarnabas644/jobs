@@ -52,6 +52,14 @@ include($_SERVER['DOCUMENT_ROOT'] ."/catalog/sites/loginsite/session.php");
 				<td><input name='brand' type='text' id='brand' value=''/></td>
 				</tr>
 				<tr>
+				<td><label for='image'>1. kép neve: </label></td>
+				<td><input name='brand' type='text' id='image' value=''/></td>
+				</tr>
+				<tr>
+				<td><label for='big_image'>2. kép neve: </label></td>
+				<td><input name='brand' type='text' id='big_image' value=''/></td>
+				</tr>
+				<tr>
 				<td colspan='2' align='center'><a class='btn btn-secondary' href='../../sites/adminsite/admin.php' role='button'>Mégsem</a>
 				<input type='submit' class='btn btn-success' name='add' value='Mentés' href='../../sites/adminsite/admin.php'/></td>
 				</tr>
