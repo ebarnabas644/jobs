@@ -1,0 +1,42 @@
+--
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 11.1
+-- Dumped by pg_dump version 11.1
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET client_min_messages = warning;
+SET row_security = off;
+
+SET default_tablespace = '';
+
+SET default_with_oids = false;
+
+--
+-- Name: phones; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.phones (
+    id integer,
+    name character varying(255),
+    price integer,
+    image character varying(255),
+    brand character varying,
+    big_image character varying(255),
+    stock character varying
+);
+
+
+ALTER TABLE public.phones OWNER TO postgres;
+
+--
+-- PostgreSQL database dump complete
+--
+
