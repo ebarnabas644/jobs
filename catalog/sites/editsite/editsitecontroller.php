@@ -15,7 +15,7 @@
 				<table align='center'>
 				<tr>
 				<td><label for='id'>Azonosító: </label></td>
-				<td><input name='id' type='text' id='id' value='$productid' style='background-1olor:grey' readonly/></td>
+				<td><input name='id' type='text' id='id' value='$productid' style='background-color:lightgrey' readonly/></td>
 				</tr>
 				<tr>
 				<td><label for='name'>Terméknév: </label></td>

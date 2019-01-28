@@ -1,6 +1,19 @@
 <?php
 include($_SERVER['DOCUMENT_ROOT'] ."/catalog/sites/loginsite/session.php");
+require($_SERVER['DOCUMENT_ROOT'] ."/catalog/databaseaccess/phones.php");
+require ($_SERVER['DOCUMENT_ROOT'] ."/catalog/databaseaccess/accessdatabase.php");
+$phone = new Phones();
+$phonearray=$phone->GetPhones();
+$include[]=array();
+$number=1;
+foreach ($phonearray as $key => $phone) {
+				$include[]=$phone->id;
+			}
+			while(in_array($number,$include)){
+				$number=$number+1;
+			}
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -33,7 +46,7 @@ include($_SERVER['DOCUMENT_ROOT'] ."/catalog/sites/loginsite/session.php");
 				<table align='center'>
 				<tr>
 				<td><label for='id'>Azonosító: </label></td>
-				<td><input name='id' type='text' id='id' value=''/></td>
+				<td><input name='id' type='number' id='id' value='<?php echo($number) ?>' style='background-color:lightgrey' readonly/></td>
 				</tr>
 				<tr>
 				<td><label for='name'>Terméknév: </label></td>
