@@ -1,3 +1,6 @@
+<?php
+include ($_SERVER['DOCUMENT_ROOT'] ."/catalog/sites/loginsite/session.php");
+?>
 <html>
 <head>
 	<title>Termék katalógus</title>
