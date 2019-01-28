@@ -22,8 +22,7 @@ include($_SERVER['DOCUMENT_ROOT'] ."/catalog/sites/loginsite/session.php");
 			<span></span>
 		</div>
 		<ul>
-			<a href="../../sites/loginsite/login.php"><li>Kijelentkezés</li></a>
-			<li><input id="sidesearch" type="text" placeholder="Keresés.." name="search" width="230px"></li>
+			<a href="../../sites/logoutsite/logout.php"><li>Kijelentkezés</li></a>
 		</ul>
 	</div>	</div>
 	<div class="row" align="center">
