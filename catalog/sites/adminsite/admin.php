@@ -6,23 +6,23 @@ require ($_SERVER['DOCUMENT_ROOT'] ."/catalog/databaseaccess/accessdatabase.php"
 			pg_query($db_connectiontocatalog,"DELETE FROM phones WHERE id='$id'");
 		}
 	if(array_key_exists('save', $_POST)){
-		$id=$_POST['id'];
-		$name=$_POST['name'];
-		$price=$_POST['price'];
+		$id=pg_escape_string($_POST['id']);
+		$name=pg_escape_string($_POST['name']);
+		$price=pg_escape_string($_POST['price']);
 		if(isset($_POST['stock'])){
 			$stock='true';
 		}
 		else{
 		$stock='false';
 	}
-	$image=$_POST['image'];
-		$big_image=$_POST['big_image'];
-		$brand=$_POST['brand'];
+	$image=pg_escape_string($_POST['image']);
+		$big_image=pg_escape_string($_POST['big_image']);
+		$brand=pg_escape_string($_POST['brand']);
 		pg_query($db_connectiontocatalog, "UPDATE phones SET (name,price,stock,brand,image,big_image) = ('$name','$price','$stock','$brand','$image','$big_image') WHERE id=$id");
 	}
 	if(array_key_exists('add', $_POST)){
-		$id=$_POST['id'];
-		$name=$_POST['name'];
+		$id=pg_escape_string($_POST['id']);
+		$name=pg_escape_string($_POST['name']);
 		$price=$_POST['price'];
 		if(isset($_POST['stock'])){
 			$stock='true';
@@ -30,9 +30,9 @@ require ($_SERVER['DOCUMENT_ROOT'] ."/catalog/databaseaccess/accessdatabase.php"
 		else{
 		$stock='false';
 	}
-		$brand=$_POST['brand'];
-		$image=$_POST['image'];
-		$big_image=$_POST['big_image'];
+		$brand=pg_escape_string($_POST['brand']);
+		$image=pg_escape_string($_POST['image']);
+		$big_image=pg_escape_string($_POST['big_image']);
 		pg_query($db_connectiontocatalog, "INSERT INTO phones (id,name,price,stock,brand,image,big_image) VALUES ('$id','$name','$price','$stock','$brand','$image','$big_image')");
 	}
 ?>
@@ -42,7 +42,7 @@ require ($_SERVER['DOCUMENT_ROOT'] ."/catalog/databaseaccess/accessdatabase.php"
 	<title>Termék katalógus</title>
 	<link rel="stylesheet" type="text/css" href="../../style.css">
 	<link rel="stylesheet" type="text/css" href="../../bootstrap/css/bootstrap.min.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <script type="text/javascript">
 	function toggleSidebar(){

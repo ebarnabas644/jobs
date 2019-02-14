@@ -19,11 +19,11 @@
 				</tr>
 				<tr>
 				<td><label for='name'>Terméknév: </label></td>
-				<td><input name='name' type='text' id='name' value='$phone->name'/></td>
+				<td><input name='name' type='text' id='name' value='$phone->name' required /></td>
 				</tr>
 				<tr>
 				<td><label for='price'>Termékár: </label></td>
-				<td><input name='price' type='text' id='price' value='$phone->price'/></td>
+				<td><input name='price' type='number' id='price' value='$phone->price' required /></td>
 				</tr>
 				<tr>
 				<td><label for='stock'>Van-e raktáron: </label>
@@ -31,7 +31,7 @@
 				</tr>
 				<tr>
 				<td><label for='brand'>Márka: </label></td>
-				<td><input name='brand' type='text' id='brand' value='$phone->brand'/></td>
+				<td><input name='brand' type='text' id='brand' value='$phone->brand' required /></td>
 				</tr>
 				<tr>
 				<td><label for='image'>1. kép neve: </label></td>
@@ -52,6 +52,6 @@
 			}
 			return $result;
 		}
-		
+
 }
 ?>

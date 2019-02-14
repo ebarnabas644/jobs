@@ -20,7 +20,7 @@ foreach ($phonearray as $key => $phone) {
 	<title>Termék katalógus</title>
 	<link rel="stylesheet" type="text/css" href="../../style.css">
 	<link rel="stylesheet" type="text/css" href="../../bootstrap/css/bootstrap.min.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <script type="text/javascript">
 	function toggleSidebar(){
@@ -50,11 +50,11 @@ foreach ($phonearray as $key => $phone) {
 				</tr>
 				<tr>
 				<td><label for='name'>Terméknév: </label></td>
-				<td><input name='name' type='text' id='name' value=''/></td>
+				<td><input name='name' type='text' id='name' value='' required /></td>
 				</tr>
 				<tr>
 				<td><label for='price'>Termékár: </label></td>
-				<td><input name='price' type='text' id='price' value=''/></td>
+				<td><input name='price' type='number' id='price' value='' required /></td>
 				</tr>
 				<tr>
 				<td><label for='stock'>Van-e raktáron: </label></td>
@@ -62,7 +62,7 @@ foreach ($phonearray as $key => $phone) {
 				</tr>
 				<tr>
 				<td><label for='brand'>Márka: </label></td>
-				<td><input name='brand' type='text' id='brand' value=''/></td>
+				<td><input name='brand' type='text' id='brand' value='' required /></td>
 				</tr>
 				<tr>
 				<td><label for='image'>1. kép neve: </label></td>
